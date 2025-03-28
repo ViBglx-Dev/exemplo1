@@ -3,17 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercicio1</title>
+    <title>Esportes Favoritos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        li {
+            background: #3498db;
+            color: white;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <h1 id = "titulo" style="color: cornflowerblue;">Esportes</h1>
-    <ul>
-        <li class="esporte">futebol</li>
-        <li class="esporte">basquete</li>
-        <li class="esporte">vôlei</li>
-       <li class="esporte">tenis</li>
-    </ul>
-    
-    <script src = script.js></script>
+    <h1 id="titulo">Meus Esportes Favoritos</h1>
+    <div class="container">
+        <ul id="listadeesporte">
+            <li class="esporte">Futebol</li>
+            <li class="esporte">Basquete</li>
+            <li class="esporte">Vôlei</li>
+            <li class="esporte">Tênis</li>
+        </ul>
+    </div>
+    <footer>© 2025 - Todos os direitos reservados</footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
